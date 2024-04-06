@@ -1,6 +1,5 @@
 {
-    "overwatch": [
-        {
+    "overwatch": [{
         "clips": [
             {
                 "id": 1,
@@ -152,10 +151,9 @@
                 "youtube_embed_link": "https://www.youtube.com/embed/Y4XdJbKSL-k?si=lccNpW9mlFnotXH-",
                 "rank": "Bronze"
             }
-        ]
-    }],
-    "Fortnite": [
-        {
+        ]}
+    ],
+    "Fortnite": [{
         "clips": [
             {
                 "id": 1,
@@ -307,7 +305,7 @@
                 "youtube_embed_link": "https://www.youtube.com/embed/TIazzn0NeW0?si=aPMxM-fVbwSQNTkM",
                 "rank": "Unreal"
             }
-        ]
-    }]
+        ]}
+    ]
 }
   
