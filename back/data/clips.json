@@ -1,5 +1,6 @@
 {
-    "overwatch": [{
+    "overwatch": [
+        {
         "clips": [
             {
                 "id": 1,
@@ -153,7 +154,7 @@
             }
         ]}
     ],
-    "Fortnite": [{
+    "fortnite": [{
         "clips": [
             {
                 "id": 1,
