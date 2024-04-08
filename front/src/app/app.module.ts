@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RandomComponent } from './random/random.component';
 import { InfoComponent } from './info/info.component';
+import { ResultComponent } from './result/result.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RandomComponent,
-    InfoComponent
+    InfoComponent,
+    ResultComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
