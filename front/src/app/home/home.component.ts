@@ -24,7 +24,7 @@ export class HomeComponent {
       });
       if (this.games.length % 3 !== 0) {
         const game = {
-          name: "COMMING SOON",
+          name: "COMING SOON",
           imageUrl: `../assets/image/game_logo/template.jpg`,
           route: ''
         };
