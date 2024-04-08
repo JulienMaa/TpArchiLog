@@ -7,6 +7,10 @@ const path = "../data/ranks.json";
 export class RanksService {
   private readonly ranksData = require(path);
 
+  getGameNames(): string[] {
+    return Object.keys(this.ranksData);
+  }
+
   findAllByGame(game: string): Ranks | null {
     const gameRanks = this.ranksData[game];
     return gameRanks || null;

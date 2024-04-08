@@ -11,3 +11,13 @@ export class RanksController {
     return this.ranksService.findAllByGame(game);
   }
 }
+
+@Controller('games')
+export class GamesController {
+  constructor(private readonly ranksService: RanksService) {}
+
+  @Get()
+  getGameNames(): string[] {
+    return this.ranksService.getGameNames();
+  }
+}

@@ -4,47 +4,13 @@
 
 <div class="container mt-4" style="z-index: 1;">
   <div class="row">
-    <div class="col-lg-4 mb-4">
+    <div class="col-lg-4 mb-4" *ngFor="let game of games">
       <div class="card border-dark position-relative" style="background-color: #12122a;">
-        <a href="/random">
-          <img src="../assets/image/game_logo/overwatch.jpg" class="card-img-top img-fluid shadow" alt="Overwatch">
-          <h3 class="card-title text-white text-center position-absolute w-100" style="bottom: 50%;">OVERWATCH</h3>
+        <a [href]="game.route">
+          <img [src]="game.imageUrl" class="card-img-top img-fluid shadow" [alt]="game.name">
+          <h3 class="card-title text-white text-center position-absolute w-100" style="bottom: 50%;">{{ game.name }}</h3>
         </a>
       </div>
     </div>
-
-    <div class="col-lg-4 mb-4">
-      <div class="card border-dark position-relative" style="background-color: #12122a;">
-        <a href="/random">
-          <img src="../assets/image/game_logo/fortnite.jpg" class="card-img-top img-fluid shadow" alt="Game 2">
-          <h3 class="card-title text-white text-center position-absolute w-100" style="bottom: 50%;">FORTNITE</h3>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-lg-4 mb-4">
-      <div class="card border-dark position-relative" style="background-color: #12122a;">
-        <h3 class="card-title text-white text-center position-absolute w-100" style="bottom: 50%;">COMMING SOON</h3>
-      </div>
-    </div>
-
-    <div class="col-lg-4 mb-4">
-      <div class="card border-dark position-relative" style="background-color: #12122a;">
-        <h3 class="card-title text-white text-center position-absolute w-100" style="bottom: 50%;">COMMING SOON</h3>
-      </div>
-    </div>
-
-    <div class="col-lg-4 mb-4">
-      <div class="card border-dark position-relative" style="background-color: #12122a;">
-        <h3 class="card-title text-white text-center position-absolute w-100" style="bottom: 50%;">COMMING SOON</h3>
-      </div>
-    </div>
-
-    <div class="col-lg-4 mb-4">
-      <div class="card border-dark position-relative" style="background-color: #12122a;">
-        <h3 class="card-title text-white text-center position-absolute w-100" style="bottom: 50%;">COMMING SOON</h3>
-      </div>
-    </div>
-
   </div>
 </div>

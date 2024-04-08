@@ -8,12 +8,29 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent {
   title = 'Home';
-  games = [
-    { name: 'Overwatch', imageUrl: '../assets/image/game_logo/overwatch.jpg', route: '/random' },
-    { name: 'Fortnite', imageUrl: '../assets/image/game_logo/fortnite.jpg', route: '/random' },
-    { name: 'Game 3', imageUrl: '', route: '' },
-    { name: 'Game 4', imageUrl: '', route: '' },
-    { name: 'Game 5', imageUrl: '', route: '' },
-    { name: 'Game 6', imageUrl: '', route: '' }
-  ];
+  games: any[] = [];
+
+  constructor(private http: HttpClient) { }
+
+  ngOnInit() {
+    this.http.get<any>('http://localhost:3000/games').subscribe(data => {
+      data.forEach((item: string) => {
+        const game = {
+          name: item.toUpperCase(),
+          imageUrl: `../assets/image/game_logo/${item}.jpg`,
+          route: '/random?game=' + item,
+        };
+        this.games.push(game);
+      });
+      if (this.games.length % 3 !== 0) {
+        const game = {
+          name: "COMMING SOON",
+          imageUrl: `../assets/image/game_logo/template.jpg`,
+          route: ''
+        };
+        this.games.push(game);
+      }
+    });
+  }
+  
 }
