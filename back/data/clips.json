@@ -151,6 +151,31 @@
                 "id": 30,
                 "youtube_embed_link": "https://www.youtube-nocookie.com/embed/Y4XdJbKSL-k?si=lccNpW9mlFnotXH-",
                 "rank": "Bronze"
+            },
+            {
+                "id": 31,
+                "youtube_embed_link": "https://www.youtube-nocookie.com/embed/c9yLnQ8XD5M?si=fVtg1b1VCe719ZNu",
+                "rank": "Gold"
+            },
+            {
+                "id": 32,
+                "youtube_embed_link": "https://www.youtube-nocookie.com/embed/4lkbT_NJJ-Q?si=UpkBVy7WZPXvKw9d",
+                "rank": "Master"
+            },
+            {
+                "id": 33,
+                "youtube_embed_link": "https://www.youtube-nocookie.com/embed/efogbvT1zaI?si=zSFN7_pxWyBVOZP7",
+                "rank": "Silver"
+            },
+            {
+                "id": 34,
+                "youtube_embed_link": "https://www.youtube-nocookie.com/embed/_fwR88rfCWk?si=SyvC0PdLYEospN5d",
+                "rank": "Grandmaster"
+            },
+            {
+                "id": 35,
+                "youtube_embed_link": "https://www.youtube-nocookie.com/embed/Vof7y-VKcu0?si=deZAwX0FH70uZYUt",
+                "rank": "Platinum"
             }
         ]}
     ],
