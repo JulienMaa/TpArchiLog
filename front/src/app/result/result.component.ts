@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -14,6 +14,18 @@ export class ResultComponent {
   guess = "";
   answer = "";
   clipID: number = 0;
+
+  playAudio(): void{
+    let audio = new Audio();
+
+    if (this.answer == this.guess) audio.src = "../../../assets/sfx/win.mp3";
+    else audio.src = "../../../assets/sfx/lose.mp3";
+
+    audio.volume = 0.3;
+
+    audio.load();
+    audio.play();
+  }
 
   constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer, private http: HttpClient, private router: Router) { }
 
@@ -31,6 +43,7 @@ export class ResultComponent {
       (clip: any) => {
         this.clipID = clip.id;
         this.answer = clip.rank;
+        this.playAudio();
       }
     );
   }

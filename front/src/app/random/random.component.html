@@ -1,12 +1,12 @@
 <main>
   <div class="video-container">
-    <iframe width="1280" height="720" [src]="youtubeVideoLink" allowfullscreen title="video"></iframe> 1280×720
+    <iframe width="1280" height="720" [src]="youtubeVideoLink" allowfullscreen title="video"></iframe>
   </div>  
 
   <div class="row justify-content-center hidden-mob">
     <ng-container *ngFor="let rank of allRanks; let index = index">
       <div class="col-md-1">
-        <img [src]="'../../assets/image/rank_' + game + '/' + rank + '.png'" [alt]="rank" (click)="onGameButtonClick(rank)" height="150">
+        <img [src]="'../../assets/image/rank_' + game + '/' + rank + '.png'" [alt]="rank" (click)="onGameButtonClick(rank)" height="150" class="rank">
       </div>
     </ng-container>
   </div>
@@ -15,7 +15,7 @@
     <div class="row justify-content-center">
       <ng-container *ngFor="let rank of allRanks; let index = index">
         <div class="col-4 mb-3">
-          <img [src]="'../../assets/image/rank_' + game + '/' + rank + '.png'" [alt]="rank" (click)="onGameButtonClick(rank)" class="img-fluid" height="150">
+          <img [src]="'../../assets/image/rank_' + game + '/' + rank + '.png'" [alt]="rank" (click)="onGameButtonClick(rank)" class="img-fluid" height="150" class="rank">
         </div>
       </ng-container>
     </div>

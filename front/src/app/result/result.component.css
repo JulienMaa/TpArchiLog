@@ -1,2 +1,7 @@
 div     { color: white; }
 .card   { background-color: transparent !important; }
+
+.rank:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
