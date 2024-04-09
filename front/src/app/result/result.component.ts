@@ -21,7 +21,7 @@ export class ResultComponent {
     if (this.answer == this.guess) audio.src = "../../../assets/sfx/win.mp3";
     else audio.src = "../../../assets/sfx/lose.mp3";
 
-    audio.volume = 0.3;
+    audio.volume = 0.1;
 
     audio.load();
     audio.play();
