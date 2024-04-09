@@ -1,3 +1,2 @@
-div {
-    color: white;
-}
+div     { color: white; }
+.card   { background-color: transparent !important; }
